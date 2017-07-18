@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16A323" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ClassifiedEmail" representedClassName="ClassifiedEmail" syncable="YES" codeGenerationType="class">
+        <attribute name="devicetype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Sound" representedClassName="Sound" syncable="YES" codeGenerationType="class">
+        <attribute name="master" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="music" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="soundfx" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="SpamEmail" representedClassName="SpamEmail" syncable="YES" codeGenerationType="class">
+        <attribute name="devicetype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Tutorial" representedClassName="Tutorial" syncable="YES" codeGenerationType="class">
+        <attribute name="enabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ClassifiedEmail" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="SpamEmail" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="Tutorial" positionX="-54" positionY="9" width="128" height="60"/>
+        <element name="Sound" positionX="-45" positionY="18" width="128" height="90"/>
+    </elements>
+</model>

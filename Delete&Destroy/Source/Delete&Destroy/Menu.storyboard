@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Fi1-Rg-JYX">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sneakers-Script-Narrow.otf">
+            <string>SneakersScript-Narrow</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Menu-->
+        <scene sceneID="2xW-Yf-vE8">
+            <objects>
+                <viewController storyboardIdentifier="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fi1-Rg-JYX" customClass="Menu" customModule="Delete_Destroy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KgF-GY-MwR"/>
+                        <viewControllerLayoutGuide type="bottom" id="0N3-o7-R3M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PYF-Pp-6L8">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="5rM-kk-T0i">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbA-ND-Hih">
+                                <rect key="frame" x="478.33333333333326" y="257" width="202.66666666666674" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NbA-ND-Hih" secondAttribute="height" multiplier="203:75" id="Xju-wi-0An"/>
+                                    <constraint firstAttribute="width" constant="203" id="YzF-MW-Qoz"/>
+                                    <constraint firstAttribute="height" constant="75" id="a3U-g9-L5u"/>
+                                </constraints>
+                                <state key="normal" image="about"/>
+                                <connections>
+                                    <segue destination="jfS-yc-pcR" kind="show" id="AAb-Mn-CVZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Il7-KH-Uls">
+                                <rect key="frame" x="506" y="82" width="145" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Il7-KH-Uls" secondAttribute="height" multiplier="145:83" id="1QT-dM-LDj"/>
+                                    <constraint firstAttribute="width" constant="145" id="C8K-Y5-0l7"/>
+                                </constraints>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="PlayButtonPressed:" destination="Fi1-Rg-JYX" eventType="touchUpInside" id="Jgv-aB-Fwn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKl-Hy-5JT">
+                                <rect key="frame" x="455.33333333333326" y="173" width="248.66666666666674" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HKl-Hy-5JT" secondAttribute="height" multiplier="249:76" id="Df8-cT-xLW"/>
+                                    <constraint firstAttribute="height" constant="76" id="zh1-PJ-If3"/>
+                                </constraints>
+                                <state key="normal" image="options"/>
+                                <connections>
+                                    <segue destination="9eT-LZ-0uP" kind="show" id="UMM-qZ-1OU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5rM-kk-T0i" firstAttribute="top" secondItem="PYF-Pp-6L8" secondAttribute="top" id="4mO-cd-EAJ"/>
+                            <constraint firstItem="NbA-ND-Hih" firstAttribute="top" secondItem="HKl-Hy-5JT" secondAttribute="bottom" constant="8" symbolic="YES" id="6Q6-IO-gRj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Il7-KH-Uls" secondAttribute="trailing" constant="65" id="Fw1-uc-Pmp"/>
+                            <constraint firstAttribute="trailing" secondItem="5rM-kk-T0i" secondAttribute="trailing" id="IjR-Lv-ume"/>
+                            <constraint firstItem="HKl-Hy-5JT" firstAttribute="centerX" secondItem="NbA-ND-Hih" secondAttribute="centerX" id="Ofi-Y5-9RZ"/>
+                            <constraint firstItem="5rM-kk-T0i" firstAttribute="leading" secondItem="PYF-Pp-6L8" secondAttribute="leading" id="VmQ-zY-EUm"/>
+                            <constraint firstItem="Il7-KH-Uls" firstAttribute="top" secondItem="KgF-GY-MwR" secondAttribute="bottom" constant="62" id="a1u-iU-yFC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NbA-ND-Hih" secondAttribute="trailing" constant="35" id="cIP-sB-NBn"/>
+                            <constraint firstItem="0N3-o7-R3M" firstAttribute="top" secondItem="NbA-ND-Hih" secondAttribute="bottom" constant="82" id="fVJ-Vt-dxw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HKl-Hy-5JT" secondAttribute="trailing" constant="12" id="uLi-6X-ebC"/>
+                            <constraint firstItem="HKl-Hy-5JT" firstAttribute="top" secondItem="Il7-KH-Uls" secondAttribute="bottom" constant="8" symbolic="YES" id="wie-Wh-NY3"/>
+                            <constraint firstItem="5rM-kk-T0i" firstAttribute="bottom" secondItem="0N3-o7-R3M" secondAttribute="top" id="yBb-j3-AA4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9a-mT-5yh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="65"/>
+        </scene>
+        <!--Options-->
+        <scene sceneID="njg-J7-WCb">
+            <objects>
+                <viewController storyboardIdentifier="Options" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9eT-LZ-0uP" customClass="Options" customModule="Delete_Destroy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tNb-xB-jOA"/>
+                        <viewControllerLayoutGuide type="bottom" id="PTp-47-vkf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MTN-qk-7bQ">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BuR-U8-q6o">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwj-v0-3Hx">
+                                <rect key="frame" x="20" y="20" width="75" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SneakersScript-Narrow" family="Sneakers Script" pointSize="31"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.90973395109176636" green="0.90984320640563965" blue="0.90969687700271606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButtonPressed:" destination="9eT-LZ-0uP" eventType="touchUpInside" id="ceF-zR-Q22"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aY-XZ-KEl">
+                                <rect key="frame" x="113" y="69" width="149.33333333333331" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SneakersScript-Narrow" family="Sneakers Script" pointSize="52"/>
+                                <color key="textColor" red="0.90835492227979275" green="0.90835492227979275" blue="0.90835492227979275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tutorial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FED-aY-cVQ">
+                                <rect key="frame" x="119" y="242" width="224" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SneakersScript-Narrow" family="Sneakers Script" pointSize="52"/>
+                                <color key="textColor" red="0.90835492230000003" green="0.90835492230000003" blue="0.90835492230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="31K-yk-juJ">
+                                <rect key="frame" x="366" y="133" width="4" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fTc-TB-g8J">
+                                <rect key="frame" x="366" y="83" width="4" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sound FX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hb9-4x-TeD">
+                                <rect key="frame" x="113" y="149" width="264" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SneakersScript-Narrow" family="Sneakers Script" pointSize="52"/>
+                                <color key="textColor" red="0.90835492230000003" green="0.90835492230000003" blue="0.90835492230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEO-Xy-D2M">
+                                <rect key="frame" x="427" y="255" width="178" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SneakersScript-Narrow" family="Sneakers Script" pointSize="39"/>
+                                <state key="normal" title="Enabled">
+                                    <color key="titleColor" red="0.90973395109999999" green="0.90984320640000005" blue="0.90969687700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="TButtonPressed:" destination="9eT-LZ-0uP" eventType="touchUpInside" id="5wF-IY-eMo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="MusicSlider" destination="fTc-TB-g8J" id="oAi-x1-cmd"/>
+                        <outlet property="SoundFxSlider" destination="31K-yk-juJ" id="lrJ-WA-IwK"/>
+                        <outlet property="TutorialButton" destination="WEO-Xy-D2M" id="5Iu-QS-7SY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R38-4B-RCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="1048"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="sbS-ys-3Tn">
+            <objects>
+                <viewController storyboardIdentifier="About" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jfS-yc-pcR" customClass="About" customModule="Delete_Destroy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w1Q-8c-wtt"/>
+                        <viewControllerLayoutGuide type="bottom" id="zvg-Kh-tza"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dq9-Bq-WyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="LdR-cI-ea1">
+                                <rect key="frame" x="0.0" y="0.0" width="736.33333333333337" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-pP-QDh">
+                                <rect key="frame" x="20" y="20" width="70" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SneakersScript-Narrow" family="Sneakers Script" pointSize="28"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.90973395109176636" green="0.90984320640563965" blue="0.90969687700271606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackButtonPressed:" destination="jfS-yc-pcR" eventType="touchUpInside" id="Pe5-uU-TAS"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delete And Destroy is a click and point based game that was created as a Mobile application project." lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKJ-Yq-Ivw">
+                                <rect key="frame" x="112" y="126" width="513.33333333333337" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SneakersScript-Narrow" family="Sneakers Script" pointSize="17"/>
+                                <color key="textColor" red="0.90973395109176636" green="0.90984320640563965" blue="0.90969687700271606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CNi-tk-ykX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="1048"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about" width="324" height="140"/>
+        <image name="background" width="1335" height="751"/>
+        <image name="menu" width="1335" height="751"/>
+        <image name="options" width="401" height="140"/>
+        <image name="play" width="241" height="140"/>
+    </resources>
+</document>
